@@ -5,5 +5,7 @@ from repository.repository_rm import multimesas_repository
 class Multimesas(Resource):
     def get(self):
         return multimesas_repository.getAll()
-    def post(self, parametro):
-        return 
+
+class MultimesasFilter(Resource):
+    def get(self, todo_id):
+        return multimesas_repository.get_by_name(todo_id)
