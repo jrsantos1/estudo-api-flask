@@ -11,6 +11,8 @@ api = Api(app)
 api.add_resource(Multimesas, '/multimesas')
 api.add_resource(MultimesasFilter,'/multimesas/<todo_id>')
 
+#apagar
+
 if __name__ == '__main__':
     app.run(debug=True)
 
